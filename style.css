@@ -105,6 +105,7 @@ button:hover{
     display: flex;
     align-items: center;
     gap: 12px;
+    font-family: "Roboto",Sans-serif;
 }
 .gr-element svg{
     width: 48px;
@@ -112,7 +113,7 @@ button:hover{
 }
 .gr-element span{
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
 }
 .sec2{
     min-height: 100vh;
@@ -237,15 +238,15 @@ button:hover{
 }
 .sec3-conte2{
     max-width: 68vw;
-    min-height: 50vh;
+    min-height: 40vh;
     margin: 0 auto;
     border: 5px solid #f88b05;
     border-radius: 15px;
     display: flex;
 }
 .sec3-conte2-box1{
-    min-height: 100%;
-    max-width: 100%;
+    /* min-height: 100%; */
+    width: 40%;
 }
 .sec3-conte2-box1 img{
     padding: 5px 5px 0;
@@ -254,6 +255,8 @@ button:hover{
     
 }
 .sec3-conte2-box2{
+    height: auto;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -268,6 +271,61 @@ button:hover{
     line-height: 1.3;
     word-spacing: 2px;
 }
+.sec3-conte3{
+    max-width: 80%;
+    margin: auto;
+}
+.sec3-conte3 h2{
+    text-align: center;
+    padding: 2.2vw 1.1vw 0;
+    font-size: 2.7vw;
+    font-family:  "Roboto",Sans-serif;
+}
+.sec4{
+    width: 100vw;
+    min-height: 35vh;
+}
+.about{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+}
+.courses{
+    padding-top: 30px;
+}
+ul li{
+    list-style: none;
+    font-size: 18px;
+    
+}
+.info h3{
+    font-size: 1.5rem;
+    font-family: "Ubuntu", Sans-serif;
+}
+.info .bold{
+    font-weight: bold;
+    font-family:  "Roboto",Sans-serif;
+    padding: 3px;
+}
+.footer{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgba(216, 216, 216, 0.905);
+    margin-top: 20px;
+    font-family:  "Roboto",Sans-serif;
+}
+
 
 
 @media all and (max-width: 760px) {
@@ -339,10 +397,22 @@ button:hover{
         flex-direction: column;
         border: none;
     }
+    .sec3-conte2-box1{
+        width: 100%;
+    }
+    .sec3-conte2-box1 img{
+        position: relative;
+        top: 4px;
+    }
     .sec3-conte2-box2{
+        width: 100%;
         border: 5px solid #f88b05;
         border-radius: 15px;
         padding: 20px 10px 20px 20px;
+    }
+    .sec3-conte3 h2{
+        font-size: 3.1vh;
+        padding: 2.2vh 1.1vw 0;
     }
     
 
@@ -363,6 +433,12 @@ button:hover{
     }
     .container2 h2{
         font-size: 3vw;
+    }
+    .sec2{
+        min-height: auto;
+    }
+    .sec3{
+        min-height: auto;
     }
     .sec3-conte2 {
         max-width: 85%;
